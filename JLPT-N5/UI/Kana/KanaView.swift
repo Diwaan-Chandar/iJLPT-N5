@@ -48,9 +48,5 @@ struct KanaView<Presenter>: View where Presenter: KanaPresenterContract {
         .task {
             await presenter.loadKana()
         }
-        .navigationTitle("Hiragana")
-#if os(iOS)
-        .navigationBarTitleDisplayMode(.inline)
-#endif
     }
 }

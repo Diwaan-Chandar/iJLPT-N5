@@ -40,7 +40,7 @@ struct ContentView: View {
                     Label("Listen", systemImage: "headphones")
                 }
             
-            NavigationView {
+            NavigationStack {
                 KanaContainerView(presenter: kanaPresenter)
             }
             .tabItem {
