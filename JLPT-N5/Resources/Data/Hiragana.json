@@ -1,0 +1,687 @@
+[
+  {
+    "title": "Hiragana",
+    "description": "The foundational 46 characters of the Japanese writing system. Mastering these basic sounds is your very first step towards fluency.",
+    "columnsCount": 5,
+    "rows": [
+      {
+        "row": "a",
+        "characters": [
+          {
+            "kana": "あ",
+            "romaji": "a",
+            "id": "a1"
+          },
+          {
+            "kana": "い",
+            "romaji": "i",
+            "id": "a2"
+          },
+          {
+            "kana": "う",
+            "romaji": "u",
+            "id": "a3"
+          },
+          {
+            "kana": "え",
+            "romaji": "e",
+            "id": "a4"
+          },
+          {
+            "kana": "お",
+            "romaji": "o",
+            "id": "a5"
+          }
+        ]
+      },
+      {
+        "row": "ka",
+        "characters": [
+          {
+            "kana": "か",
+            "romaji": "ka",
+            "id": "ka1"
+          },
+          {
+            "kana": "き",
+            "romaji": "ki",
+            "id": "ka2"
+          },
+          {
+            "kana": "く",
+            "romaji": "ku",
+            "id": "ka3"
+          },
+          {
+            "kana": "け",
+            "romaji": "ke",
+            "id": "ka4"
+          },
+          {
+            "kana": "こ",
+            "romaji": "ko",
+            "id": "ka5"
+          }
+        ]
+      },
+      {
+        "row": "sa",
+        "characters": [
+          {
+            "kana": "さ",
+            "romaji": "sa",
+            "id": "sa1"
+          },
+          {
+            "kana": "し",
+            "romaji": "shi",
+            "id": "sa2"
+          },
+          {
+            "kana": "す",
+            "romaji": "su",
+            "id": "sa3"
+          },
+          {
+            "kana": "せ",
+            "romaji": "se",
+            "id": "sa4"
+          },
+          {
+            "kana": "そ",
+            "romaji": "so",
+            "id": "sa5"
+          }
+        ]
+      },
+      {
+        "row": "ta",
+        "characters": [
+          {
+            "kana": "た",
+            "romaji": "ta",
+            "id": "ta1"
+          },
+          {
+            "kana": "ち",
+            "romaji": "chi",
+            "id": "ta2"
+          },
+          {
+            "kana": "つ",
+            "romaji": "tsu",
+            "id": "ta3"
+          },
+          {
+            "kana": "て",
+            "romaji": "te",
+            "id": "ta4"
+          },
+          {
+            "kana": "と",
+            "romaji": "to",
+            "id": "ta5"
+          }
+        ]
+      },
+      {
+        "row": "na",
+        "characters": [
+          {
+            "kana": "な",
+            "romaji": "na",
+            "id": "na1"
+          },
+          {
+            "kana": "に",
+            "romaji": "ni",
+            "id": "na2"
+          },
+          {
+            "kana": "ぬ",
+            "romaji": "nu",
+            "id": "na3"
+          },
+          {
+            "kana": "ね",
+            "romaji": "ne",
+            "id": "na4"
+          },
+          {
+            "kana": "の",
+            "romaji": "no",
+            "id": "na5"
+          }
+        ]
+      },
+      {
+        "row": "ha",
+        "characters": [
+          {
+            "kana": "は",
+            "romaji": "ha",
+            "id": "ha1"
+          },
+          {
+            "kana": "ひ",
+            "romaji": "hi",
+            "id": "ha2"
+          },
+          {
+            "kana": "ふ",
+            "romaji": "fu",
+            "id": "ha3"
+          },
+          {
+            "kana": "へ",
+            "romaji": "he",
+            "id": "ha4"
+          },
+          {
+            "kana": "ほ",
+            "romaji": "ho",
+            "id": "ha5"
+          }
+        ]
+      },
+      {
+        "row": "ma",
+        "characters": [
+          {
+            "kana": "ま",
+            "romaji": "ma",
+            "id": "ma1"
+          },
+          {
+            "kana": "み",
+            "romaji": "mi",
+            "id": "ma2"
+          },
+          {
+            "kana": "む",
+            "romaji": "mu",
+            "id": "ma3"
+          },
+          {
+            "kana": "め",
+            "romaji": "me",
+            "id": "ma4"
+          },
+          {
+            "kana": "も",
+            "romaji": "mo",
+            "id": "ma5"
+          }
+        ]
+      },
+      {
+        "row": "ya",
+        "characters": [
+          {
+            "kana": "や",
+            "romaji": "ya",
+            "id": "ya1"
+          },
+          null,
+          {
+            "kana": "ゆ",
+            "romaji": "yu",
+            "id": "ya3"
+          },
+          null,
+          {
+            "kana": "よ",
+            "romaji": "yo",
+            "id": "ya5"
+          }
+        ]
+      },
+      {
+        "row": "ra",
+        "characters": [
+          {
+            "kana": "ら",
+            "romaji": "ra",
+            "id": "ra1"
+          },
+          {
+            "kana": "り",
+            "romaji": "ri",
+            "id": "ra2"
+          },
+          {
+            "kana": "る",
+            "romaji": "ru",
+            "id": "ra3"
+          },
+          {
+            "kana": "れ",
+            "romaji": "re",
+            "id": "ra4"
+          },
+          {
+            "kana": "ろ",
+            "romaji": "ro",
+            "id": "ra5"
+          }
+        ]
+      },
+      {
+        "row": "wa",
+        "characters": [
+          {
+            "kana": "わ",
+            "romaji": "wa",
+            "id": "wa1"
+          },
+          null,
+          null,
+          null,
+          {
+            "kana": "を",
+            "romaji": "wo",
+            "id": "wa5"
+          }
+        ]
+      },
+      {
+        "row": "n",
+        "characters": [
+          {
+            "kana": "ん",
+            "romaji": "n",
+            "id": "n1"
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dakuon and Handakuon",
+    "description": "These voiced and half-voiced characters are formed by adding two small dots (tenten) or a small circle (maru) to the base characters.",
+    "columnsCount": 5,
+    "rows": [
+      {
+        "row": "ga",
+        "characters": [
+          {
+            "kana": "が",
+            "romaji": "ga",
+            "id": "ga1"
+          },
+          {
+            "kana": "ぎ",
+            "romaji": "gi",
+            "id": "ga2"
+          },
+          {
+            "kana": "ぐ",
+            "romaji": "gu",
+            "id": "ga3"
+          },
+          {
+            "kana": "げ",
+            "romaji": "ge",
+            "id": "ga4"
+          },
+          {
+            "kana": "ご",
+            "romaji": "go",
+            "id": "ga5"
+          }
+        ]
+      },
+      {
+        "row": "za",
+        "characters": [
+          {
+            "kana": "ざ",
+            "romaji": "za",
+            "id": "za1"
+          },
+          {
+            "kana": "じ",
+            "romaji": "ji",
+            "id": "za2"
+          },
+          {
+            "kana": "ず",
+            "romaji": "zu",
+            "id": "za3"
+          },
+          {
+            "kana": "ぜ",
+            "romaji": "ze",
+            "id": "za4"
+          },
+          {
+            "kana": "ぞ",
+            "romaji": "zo",
+            "id": "za5"
+          }
+        ]
+      },
+      {
+        "row": "da",
+        "characters": [
+          {
+            "kana": "だ",
+            "romaji": "da",
+            "id": "da1"
+          },
+          {
+            "kana": "ぢ",
+            "romaji": "ji",
+            "id": "da2"
+          },
+          {
+            "kana": "づ",
+            "romaji": "zu",
+            "id": "da3"
+          },
+          {
+            "kana": "で",
+            "romaji": "de",
+            "id": "da4"
+          },
+          {
+            "kana": "ど",
+            "romaji": "do",
+            "id": "da5"
+          }
+        ]
+      },
+      {
+        "row": "ba",
+        "characters": [
+          {
+            "kana": "ば",
+            "romaji": "ba",
+            "id": "ba1"
+          },
+          {
+            "kana": "び",
+            "romaji": "bi",
+            "id": "ba2"
+          },
+          {
+            "kana": "ぶ",
+            "romaji": "bu",
+            "id": "ba3"
+          },
+          {
+            "kana": "べ",
+            "romaji": "be",
+            "id": "ba4"
+          },
+          {
+            "kana": "ぼ",
+            "romaji": "bo",
+            "id": "ba5"
+          }
+        ]
+      },
+      {
+        "row": "pa",
+        "characters": [
+          {
+            "kana": "ぱ",
+            "romaji": "pa",
+            "id": "pa1"
+          },
+          {
+            "kana": "ぴ",
+            "romaji": "pi",
+            "id": "pa2"
+          },
+          {
+            "kana": "ぷ",
+            "romaji": "pu",
+            "id": "pa3"
+          },
+          {
+            "kana": "ぺ",
+            "romaji": "pe",
+            "id": "pa4"
+          },
+          {
+            "kana": "ぽ",
+            "romaji": "po",
+            "id": "pa5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Combo",
+    "description": "Known as Yōon, these combined sounds are created by pairing a consonant character with a smaller version of ya, yu, or yo.",
+    "columnsCount": 3,
+    "rows": [
+      {
+        "row": "kya",
+        "characters": [
+          {
+            "kana": "きゃ",
+            "romaji": "kya",
+            "id": "kya1"
+          },
+          {
+            "kana": "きゅ",
+            "romaji": "kyu",
+            "id": "kya3"
+          },
+          {
+            "kana": "きょ",
+            "romaji": "kyo",
+            "id": "kya5"
+          }
+        ]
+      },
+      {
+        "row": "sha",
+        "characters": [
+          {
+            "kana": "しゃ",
+            "romaji": "sha",
+            "id": "sha1"
+          },
+          {
+            "kana": "しゅ",
+            "romaji": "shu",
+            "id": "sha3"
+          },
+          {
+            "kana": "しょ",
+            "romaji": "sho",
+            "id": "sha5"
+          }
+        ]
+      },
+      {
+        "row": "cha",
+        "characters": [
+          {
+            "kana": "ちゃ",
+            "romaji": "cha",
+            "id": "cha1"
+          },
+          {
+            "kana": "ちゅ",
+            "romaji": "chu",
+            "id": "cha3"
+          },
+          {
+            "kana": "ちょ",
+            "romaji": "cho",
+            "id": "cha5"
+          }
+        ]
+      },
+      {
+        "row": "nya",
+        "characters": [
+          {
+            "kana": "にゃ",
+            "romaji": "nya",
+            "id": "nya1"
+          },
+          {
+            "kana": "にゅ",
+            "romaji": "nyu",
+            "id": "nya3"
+          },
+          {
+            "kana": "にょ",
+            "romaji": "nyo",
+            "id": "nya5"
+          }
+        ]
+      },
+      {
+        "row": "hya",
+        "characters": [
+          {
+            "kana": "ひゃ",
+            "romaji": "hya",
+            "id": "hya1"
+          },
+          {
+            "kana": "ひゅ",
+            "romaji": "hyu",
+            "id": "hya3"
+          },
+          {
+            "kana": "ひょ",
+            "romaji": "hyo",
+            "id": "hya5"
+          }
+        ]
+      },
+      {
+        "row": "mya",
+        "characters": [
+          {
+            "kana": "みゃ",
+            "romaji": "mya",
+            "id": "mya1"
+          },
+          {
+            "kana": "みゅ",
+            "romaji": "myu",
+            "id": "mya3"
+          },
+          {
+            "kana": "みょ",
+            "romaji": "myo",
+            "id": "mya5"
+          }
+        ]
+      },
+      {
+        "row": "rya",
+        "characters": [
+          {
+            "kana": "りゃ",
+            "romaji": "rya",
+            "id": "rya1"
+          },
+          {
+            "kana": "りゅ",
+            "romaji": "ryu",
+            "id": "rya3"
+          },
+          {
+            "kana": "りょ",
+            "romaji": "ryo",
+            "id": "rya5"
+          }
+        ]
+      },
+      {
+        "row": "gya",
+        "characters": [
+          {
+            "kana": "ぎゃ",
+            "romaji": "gya",
+            "id": "gya1"
+          },
+          {
+            "kana": "ぎゅ",
+            "romaji": "gyu",
+            "id": "gya3"
+          },
+          {
+            "kana": "ぎょ",
+            "romaji": "gyo",
+            "id": "gya5"
+          }
+        ]
+      },
+      {
+        "row": "ja",
+        "characters": [
+          {
+            "kana": "じゃ",
+            "romaji": "ja",
+            "id": "ja1"
+          },
+          {
+            "kana": "じゅ",
+            "romaji": "ju",
+            "id": "ja3"
+          },
+          {
+            "kana": "じょ",
+            "romaji": "jo",
+            "id": "ja5"
+          }
+        ]
+      },
+      {
+        "row": "bya",
+        "characters": [
+          {
+            "kana": "びゃ",
+            "romaji": "bya",
+            "id": "bya1"
+          },
+          {
+            "kana": "びゅ",
+            "romaji": "byu",
+            "id": "bya3"
+          },
+          {
+            "kana": "びょ",
+            "romaji": "byo",
+            "id": "bya5"
+          }
+        ]
+      },
+      {
+        "row": "pya",
+        "characters": [
+          {
+            "kana": "ぴゃ",
+            "romaji": "pya",
+            "id": "pya1"
+          },
+          {
+            "kana": "ぴゅ",
+            "romaji": "pyu",
+            "id": "pya3"
+          },
+          {
+            "kana": "ぴょ",
+            "romaji": "pyo",
+            "id": "pya5"
+          }
+        ]
+      }
+    ]
+  }
+]
