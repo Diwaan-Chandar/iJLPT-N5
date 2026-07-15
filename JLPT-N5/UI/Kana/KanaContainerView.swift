@@ -9,6 +9,14 @@ enum KanaTab: String, CaseIterable {
     case hiragana = "HIRAGANA"
     case katakana = "KATAKANA"
     case kanji = "KANJI"
+    
+    var type: KanaType? {
+        switch self {
+        case .hiragana: return .hiragana
+        case .katakana: return .katakana
+        case .kanji: return nil
+        }
+    }
 }
 
 struct KanaContainerView: View {
@@ -46,29 +54,12 @@ struct KanaContainerView: View {
             .frame(height: 38)
             .padding(.horizontal)
             
-#if os(macOS)
-            switch selectedTab {
-            case .hiragana:
-                KanaView(presenter: presenter)
-            case .katakana:
-                Text("Coming Soon...")
-            case .kanji:
+            if let type = selectedTab.type {
+                KanaView(presenter: presenter, type: type)
+            } else {
                 Text("Coming Soon...")
             }
             Spacer()
-#else
-            TabView(selection: $selectedTab) {
-                KanaView(presenter: presenter)
-                    .tag(KanaTab.hiragana)
-                
-                Text("Coming Soon...")
-                    .tag(KanaTab.katakana)
-                
-                Text("Coming Soon...")
-                    .tag(KanaTab.kanji)
-            }
-            .tabViewStyle(.page(indexDisplayMode: .never))
-#endif
         }
     }
 }

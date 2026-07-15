@@ -17,9 +17,9 @@ public class DataManager {
     }
 }
 
-extension DataManager: GetHiraganasDataManagerContract {
-    public func getHiragana() throws -> Kana {
-        let kana = try fileService.getHiragana()
-        return DataMapper.mapAudioURLs(to: kana, using: fileService)
+extension DataManager: GetKanaDataManagerContract {
+    public func getKana(type: KanaType) throws -> Kana {
+        let kana = try fileService.getKana(type: type)
+        return DataMapper.mapAudioURLs(to: kana, type: type, using: fileService)
     }
 }

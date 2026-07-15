@@ -7,6 +7,7 @@ import SwiftUI
 
 struct KanaView<Presenter>: View where Presenter: KanaPresenterContract {
     @ObservedObject var presenter: Presenter
+    let type: KanaType
     
     var body: some View {
         ScrollView {
@@ -45,8 +46,8 @@ struct KanaView<Presenter>: View where Presenter: KanaPresenterContract {
             }
             .padding()
         }
-        .task {
-            await presenter.loadKana()
+        .task(id: type) {
+            await presenter.loadKana(type: type)
         }
     }
 }

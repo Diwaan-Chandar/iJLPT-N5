@@ -8,6 +8,6 @@ import Combine
 
 protocol KanaPresenterContract: ObservableObject {
     var kana: Kana? { get }
-    func loadKana() async
+    func loadKana(type: KanaType) async
     func playSound(for character: Character)
 }

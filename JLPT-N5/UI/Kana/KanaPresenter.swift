@@ -10,17 +10,17 @@ import AVFoundation
 final class KanaPresenter: KanaPresenterContract {
     @Published var kana: Kana?
     
-    private let getHiraganas: GetHiraganas
+    private let getKana: GetKana
     private var audioPlayer: AVAudioPlayer?
     
-    init(getHiraganas: GetHiraganas) {
-        self.getHiraganas = getHiraganas
+    init(getKana: GetKana) {
+        self.getKana = getKana
     }
     
-    func loadKana() async {
+    func loadKana(type: KanaType) async {
         do {
-            let request = GetHiraganaRequest()
-            let response = try await getHiraganas.execute(request: request)
+            let request = GetKanaRequest(kanaType: type)
+            let response = try await getKana.execute(request: request)
             
             await MainActor.run {
                 self.kana = response.kana

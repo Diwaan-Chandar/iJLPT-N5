@@ -6,7 +6,7 @@
 import Foundation
 
 final class DataMapper {
-    static func mapAudioURLs(to kana: Kana, using fileService: FileContract) -> Kana {
+    static func mapAudioURLs(to kana: Kana, type: KanaType, using fileService: FileContract) -> Kana {
         var updatedKana = kana
         for sIndex in updatedKana.sections.indices {
             for rowIndex in updatedKana.sections[sIndex].rows.indices {
@@ -14,7 +14,7 @@ final class DataMapper {
                     if let id = updatedKana.sections[sIndex].rows[rowIndex].characters[charIndex]?.id {
                         updatedKana.sections[sIndex].rows[rowIndex].characters[charIndex]?.audioURL = fileService.getAudioFileURL(
                             for: id,
-                            in: DirectoriesUtil.hiraganaAudio
+                            in: DirectoriesUtil.audioDirectory(for: type)
                         )
                     }
                 }

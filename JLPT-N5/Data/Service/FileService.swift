@@ -10,14 +10,30 @@ enum FileServiceError: Error {
 }
 
 final class FileService: FileContract {
-    func getHiragana() throws -> Kana {
+    func getKana(type: KanaType) throws -> Kana {
         let isMainThread = Thread.isMainThread
+        
+        let resourceName: String
+        let subdirectory: String?
+        
+        switch type {
+        case .hiragana:
+            resourceName = "Hiragana"
+            subdirectory = DirectoriesUtil.hiraganaData
+        case .katakana:
+            resourceName = "Katakana"
+            subdirectory = DirectoriesUtil.katakanaData
+        case .kanji:
+            resourceName = "Kanji"
+            subdirectory = DirectoriesUtil.kanjiData
+        }
+        
         guard let url = Bundle.main.url(
-            forResource: "Hiragana",
+            forResource: resourceName,
             withExtension: "json",
-            subdirectory: DirectoriesUtil.hiraganaData
+            subdirectory: subdirectory
         ) else {
-            throw FileServiceError.fileNotFound("Hiragana")
+            throw FileServiceError.fileNotFound(resourceName)
         }
         let data = try Data(contentsOf: url)
         let sections = try JSONDecoder().decode([KanaSection].self, from: data)

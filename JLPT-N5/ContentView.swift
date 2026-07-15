@@ -17,8 +17,8 @@ struct ContentView: View {
             databaseService: databaseService,
             fileService: fileService
         )
-        let getHiraganasUseCase = GetHiraganas(dataManager: dataManager)
-        let presenter = KanaPresenter(getHiraganas: getHiraganasUseCase)
+        let getKanaUseCase = GetKana(dataManager: dataManager)
+        let presenter = KanaPresenter(getKana: getKanaUseCase)
         
         _kanaPresenter = StateObject(wrappedValue: presenter)
     }
