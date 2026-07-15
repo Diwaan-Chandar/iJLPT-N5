@@ -2,7 +2,6 @@
   {
     "title": "Katakana",
     "description": "The foundational 46 characters of the Japanese writing system. Mastering these basic sounds is your very first step towards fluency.",
-    "columnsCount": 5,
     "rows": [
       {
         "row": "a",
@@ -303,7 +302,6 @@
   {
     "title": "Dakuon and Handakuon",
     "description": "These voiced and half-voiced characters are formed by adding two small dots (tenten) or a small circle (maru) to the base characters.",
-    "columnsCount": 5,
     "rows": [
       {
         "row": "ga",
@@ -460,7 +458,6 @@
   {
     "title": "Combo",
     "description": "Known as Yōon, these combined sounds are created by pairing a consonant character with a smaller version of ya, yu, or yo.",
-    "columnsCount": 3,
     "rows": [
       {
         "row": "kya",

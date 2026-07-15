@@ -24,8 +24,12 @@ public struct KanaRow: Codable, Sendable {
 public struct KanaSection: Codable, Sendable {
     let title: String
     let description: String
-    let columnsCount: Int
+    var columnsCount: Int = 0
     var rows: [KanaRow]
+
+    enum CodingKeys: String, CodingKey {
+        case title, description, rows
+    }
 }
 
 public struct Kana: Codable, Sendable {
