@@ -40,6 +40,19 @@ final class FileService: FileContract {
         return Kana(sections: sections)
     }
 
+    func getKanjis() throws -> Kanji {
+        guard let url = Bundle.main.url(
+            forResource: "Kanji",
+            withExtension: "json",
+            subdirectory: DirectoriesUtil.kanjiData
+        ) else {
+            throw FileServiceError.fileNotFound("Kanji")
+        }
+        let data = try Data(contentsOf: url)
+        let sections = try JSONDecoder().decode([KanjiSection].self, from: data)
+        return Kanji(sections: sections)
+    }
+
     func getAudioFileURL(for id: String, in subdirectory: String? = nil) -> URL? {
         return Bundle.main.url(
             forResource: id,

@@ -23,3 +23,9 @@ extension DataManager: GetKanaDataManagerContract {
         return DataMapper.mapAudioURLs(to: kana, type: type, using: fileService)
     }
 }
+
+extension DataManager: GetKanjisDataManagerContract {
+    public func getKanjis() throws -> Kanji {
+        return try fileService.getKanjis()
+    }
+}

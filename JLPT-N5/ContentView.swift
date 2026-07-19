@@ -7,6 +7,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var kanaPresenter: KanaPresenter
+    @StateObject private var kanjiPresenter: KanjiPresenter
     
     init() {
         let networkService = NetworkService()
@@ -18,9 +19,13 @@ struct ContentView: View {
             fileService: fileService
         )
         let getKanaUseCase = GetKana(dataManager: dataManager)
-        let presenter = KanaPresenter(getKana: getKanaUseCase)
+        let kanaPresenter = KanaPresenter(getKana: getKanaUseCase)
         
-        _kanaPresenter = StateObject(wrappedValue: presenter)
+        let getKanjisUseCase = GetKanjis(dataManager: dataManager)
+        let kanjiPresenter = KanjiPresenter(getKanjisUseCase: getKanjisUseCase)
+        
+        _kanaPresenter = StateObject(wrappedValue: kanaPresenter)
+        _kanjiPresenter = StateObject(wrappedValue: kanjiPresenter)
     }
 
     var body: some View {
@@ -41,7 +46,7 @@ struct ContentView: View {
                 }
             
             NavigationStack {
-                KanaContainerView(presenter: kanaPresenter)
+                KanaContainerView(kanaPresenter: kanaPresenter, kanjiPresenter: kanjiPresenter)
             }
             .tabItem {
                 Label("Kana", systemImage: "textformat.abc")

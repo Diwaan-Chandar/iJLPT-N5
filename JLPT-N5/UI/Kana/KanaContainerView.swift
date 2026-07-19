@@ -20,7 +20,8 @@ enum KanaTab: String, CaseIterable {
 }
 
 struct KanaContainerView: View {
-    @ObservedObject var presenter: KanaPresenter
+    @ObservedObject var kanaPresenter: KanaPresenter
+    @ObservedObject var kanjiPresenter: KanjiPresenter
     @State private var selectedTab: KanaTab = .hiragana
     
     var body: some View {
@@ -55,7 +56,9 @@ struct KanaContainerView: View {
             .padding(.horizontal)
             
             if let type = selectedTab.type {
-                KanaView(presenter: presenter, type: type)
+                KanaView(presenter: kanaPresenter, type: type)
+            } else if selectedTab == .kanji {
+                KanjiView(presenter: kanjiPresenter)
             } else {
                 Text("Coming Soon...")
             }
