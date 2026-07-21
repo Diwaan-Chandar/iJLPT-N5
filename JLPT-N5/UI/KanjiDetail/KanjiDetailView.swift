@@ -13,8 +13,7 @@ struct KanjiDetailView<Presenter>: View where Presenter: KanjiDetailPresenterCon
             VStack(spacing: 24) {
                 // Kanji Header
                 VStack(spacing: 8) {
-                    Text(presenter.kanji.kanji)
-                        .font(.system(size: 100, weight: .light, design: .serif))
+                    KanjiStrokeView(strokes: presenter.kanji.strokes)
                 }
                 .padding(.top, 20)
                 
@@ -33,7 +32,7 @@ struct KanjiDetailView<Presenter>: View where Presenter: KanjiDetailPresenterCon
                     }
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Color(UIColor.secondarySystemBackground))
+                    .background(Color.secondary.opacity(0.1))
                     .cornerRadius(12)
                 }
                 .padding(.horizontal)
@@ -92,7 +91,7 @@ struct KanjiDetailView<Presenter>: View where Presenter: KanjiDetailPresenterCon
                             }
                         }
                         .padding()
-                        .background(Color(UIColor.secondarySystemBackground))
+                        .background(Color.secondary.opacity(0.1))
                         .cornerRadius(12)
                     }
                     .padding(.horizontal)
@@ -100,8 +99,10 @@ struct KanjiDetailView<Presenter>: View where Presenter: KanjiDetailPresenterCon
             }
             .padding(.bottom, 30)
         }
-        .navigationTitle(presenter.kanji.kanji)
+        .navigationTitle("")
+#if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+#endif
     }
     
     @ViewBuilder
@@ -142,7 +143,7 @@ struct KanjiDetailView<Presenter>: View where Presenter: KanjiDetailPresenterCon
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color(UIColor.secondarySystemBackground))
+            .background(Color.secondary.opacity(0.1))
             .cornerRadius(12)
         }
     }
